@@ -1,0 +1,161 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="C:\AvaSpecX64-DLL_9.9.3.0\examples\MATLAB\SpectrometerUI.prj" location="C:\AvaSpecX64-DLL_9.9.3.0\examples\MATLAB" name="SpectrometerUI" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>SpectrometerUI</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Iftach Zairi</param.authnamewatermark>
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\SpectrometerUI\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\SpectrometerUI\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\SpectrometerUI\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\SpectrometerUI\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\SpectrometerUI</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+      <param.help.text />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\intro.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\avaspecx64.dll</file>
+      <file>${PROJECT_ROOT}\spectrometer</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\AGC.m</file>
+      <file>${PROJECT_ROOT}\exitSafe.m</file>
+      <file>${PROJECT_ROOT}\fwFrequency.m</file>
+      <file>${PROJECT_ROOT}\Main.m</file>
+      <file>${PROJECT_ROOT}\Params.mat</file>
+      <file>${PROJECT_ROOT}\SaveData.m</file>
+      <file>${PROJECT_ROOT}\Settings.m</file>
+      <file>${PROJECT_ROOT}\spectrometer.mexw64</file>
+      <file>${PROJECT_ROOT}\test.m</file>
+      <file>${PROJECT_ROOT}\verdictPlotter.m</file>
+      <file>${PROJECT_ROOT}\writeRAW.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\SpectrometerUI\for_testing" name="readme.txt" optional="true">C:\AvaSpecX64-DLL_9.9.3.0\examples\MATLAB\SpectrometerUI\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\SpectrometerUI\for_testing" name="splash.png" optional="false">C:\AvaSpecX64-DLL_9.9.3.0\examples\MATLAB\SpectrometerUI\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\SpectrometerUI\for_testing" name="SpectrometerUI.exe" optional="false">C:\AvaSpecX64-DLL_9.9.3.0\examples\MATLAB\SpectrometerUI\for_testing\SpectrometerUI.exe</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2018a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="polyspacebugfinder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

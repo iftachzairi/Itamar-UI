@@ -1,0 +1,2 @@
+LIBRARY "spectrometer.mexw64"
+EXPORTS mexFunction
